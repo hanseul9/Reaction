@@ -1,9 +1,11 @@
 //로그인 컴포넌트를 띄운다.
 
+import Login from "./Login.jsx";
+
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Login />
     </div>
   );
 }

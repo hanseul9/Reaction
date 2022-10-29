@@ -11,7 +11,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1
     };
     return (
-      <div>
+      <div> 
         
         <Slider {...settings}>
           <div>

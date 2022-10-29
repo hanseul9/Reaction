@@ -7,20 +7,22 @@
 
 .page {
     position: absolute;
-    top:0;
-    bottom: 0;
+    top: 70px;
+    bottom: 70px;
     width: 100%;
     max-width: 500px;
-    padding: 0 20px;
-
+    padding: 0 40px;
+    border-radius: 20px;
     left: 50%;
     transform: translate(-50%, 0);
 
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     overflow: hidden;
 
     display: flex;
     flex-direction: column;
+
+    box-shadow: 1px 1px 40px 0.5px grey;
 }
 
 .titleWrap1{
@@ -28,10 +30,10 @@
     justify-content: center;
     align-items: center;
     font-family: 'MICEGothic Bold';
-    margin-top: 87px;
+    margin-top: 70px;
     font-size: 26px;
     font-weight: 700;
-    color: #262626;
+    color: #5cc6e9;
 }
 
 .titleWrap2{
@@ -41,7 +43,7 @@
     font-family: 'MICEGothic Bold';
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 87px;
+    margin-bottom: 20px;
     color: #262626;
 }
 
@@ -97,6 +99,20 @@
     border-radius: 32px;
     color: white;
     margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.bottomButton2{
+    font-family: 'MICEGothic Bold';
+    width: 100%;
+    height: 48px;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #5cc6e9;
+    border-radius: 32px;
+    color: white;
+    margin-bottom: 30px;
     cursor: pointer;
 }
 

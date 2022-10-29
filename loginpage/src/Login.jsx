@@ -107,7 +107,7 @@ export default function Login() {
             <button onClick={onClickConfirmButton} disabled={notAllow} className='bottomButton'>
               로그인
             </button>
-            <button disabled={false} className='bottomButton'>
+            <button disabled={false} className='bottomButton2'>
               회원가입
             </button>
           </div>

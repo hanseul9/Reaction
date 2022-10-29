@@ -1,0 +1,31 @@
+.sidebar{
+    margin: 15px;
+    border-radius: 10px;
+    background-color: rgba( 178, 235, 244, 0.5 );
+    
+    width: 450px;
+    height: 1000px;
+    padding: 9%;
+    
+  }
+
+  .reviewImage{
+    width: 200px;
+    height: 200px;
+    
+  }
+
+  .imgContainer{
+    overflow: hidden;
+  }
+
+.nameStar{
+    display: inline-block;
+    margin-right: 230px;
+}
+
+.slider{
+    
+    margin-left: 15px;
+    margin-right: 5px;
+}

@@ -25,12 +25,24 @@
     box-shadow: 1px 1px 40px 0.5px grey;
 }
 
+.backbutton{
+    font-family: 'MICEGothic Bold';
+    width: 10;
+    height: 40px;
+    border: none;
+    font-size: 35px;
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 .titleWrap1{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'MICEGothic Bold';
-    margin-top: 70px;
+    margin-top: 35px;
     font-size: 26px;
     font-weight: 700;
     color: #5cc6e9;

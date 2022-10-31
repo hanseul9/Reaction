@@ -4,19 +4,23 @@ import { useEffect } from 'react';
 
 //회원정보 더미 데이터
 const User = {
-    email : 'suhan128@icloud.com',
-    pw : 'q1w2e3@@@'
+    email : 'reaction@hansung.ac.kr',
+    pw : 'qwerty123@',
+    birth : 19991111,
+    name : 'Limsuhan'
 }
 
 //로그인 컴포넌트
-
-export default function Login() {
+export default function Signup() {
 
     const [email, setEmail] = useState('');
     const [pw, setPw] = useState('');
+    const [birth, setBirth] = useState('');
+    const [name, setName] = useState('');
 
     const [emailValid, setEmailValid] = useState(false); //이메일 형식이 맞는지
     const [pwValid, setPwValid] = useState(false); //비밀번호 형식이 맞는지
+    const [birthValid, setBirthValid] = useState(false); //생년월일 형식이 맞는지
     const [notAllow, setNotAllow] = useState(true);//버튼 활성화
    
     const handleEmail = (e) => {
@@ -41,16 +45,31 @@ export default function Login() {
       }
     };
 
-    useEffect(() => {//훅 (이메일과 아이디 정확이 입력해야 버튼 활성화)
-        if(emailValid && pwValid) {
-          setNotAllow(false);
+    const handleName = (e) => {
+      setName(e.target.value);
+    };
+
+    const handleBirthday = (e) => {
+        setBirth(e.target.value);
+        const regex =//자바스크립트 정규표현식
+        /^(19[0-9][0-9]|20\d{2})(0[0-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])$/;
+        if (regex.test(e.target.value)) {//정규표현식에 맞으면
+          setBirthValid(true);
+        } else {
+            setBirthValid(false);
+        }
+      };
+
+    useEffect(() => {//훅 (이메일과 비밀번호와 생년월일 정확히 입력해야 버튼 활성화)
+        if(emailValid && pwValid && birthValid) {
+          setNotAllow(false); //버튼 활성화
           return;
         }
-        setNotAllow(true);
-      }, [emailValid, pwValid]);
+        setNotAllow(true); //기본적으로 버튼 비활성화
+      }, [emailValid, pwValid, birthValid]);
 
-    const onClickConfirmButton = () => {
-      if(email === User.email && pw === User.pw) {
+    const onClickConfirmButton = () => { //버튼을 눌렀을때 액션
+      if(email === User.email && pw === User.pw && name===User.name) {
         alert('로그인에 성공했습니다.')
       } else {
         alert("등록되지 않은 회원입니다.");
@@ -59,12 +78,14 @@ export default function Login() {
 
     return (
         <div className="page">
-          <div className="titleWrap1">
-            Reaction map
+          <div>
+          <button className='backbutton'>
+            ❮
+          </button>
           </div>
-            <br/>
-          <div className="titleWrap2">
-            아이디와 비밀번호를 입력해주세요
+
+          <div className="titleWrap1">
+            회원가입
           </div>
     
           <div className="contentWrap">
@@ -82,6 +103,7 @@ export default function Login() {
                 !emailValid && email.length > 0 && (
                     <div>올바른 이메일을 입력해주세요.</div>
                 )
+                //더미 데이터에 동일한 이메일이 있으면 출력
               }
             </div>
     
@@ -101,15 +123,38 @@ export default function Login() {
                 )
               }
             </div>
+            <div style={{marginTop:"26px"}} className="inputTitle">이름</div >
+            <div className="inputWrap">
+              <input 
+              type= 'text'
+              className="input" 
+              value={name}
+              placeholder='이름 입력'
+              onChange={handleName}/>
+            </div>
+            <div style={{marginTop:"26px"}} className="inputTitle">생년월일</div >
+            <div className="inputWrap">
+              <input 
+              type= 'text'
+              className="input" 
+              placeholder='YYYYMMDD'
+              value={birth}
+              onChange={handleBirthday}/>
+            </div>
+            <div className="errorMessageWrap">
+              {//생년월일 길이가 0을 넘고 형식에 맞지 않으면 출력
+                !birthValid && birth.length > 0 && (
+                    <div>YYYYMMDD 형식으로 입력 해주세요</div>
+                )
+              }
+            </div>
           </div>
     
           <div>
             <button onClick={onClickConfirmButton} disabled={notAllow} className='bottomButton'>
-              로그인
+              회원가입 완료
             </button>
-            <button disabled={false} className='bottomButton2'>
-              회원가입
-            </button>
+            
           </div>
         </div>
       );

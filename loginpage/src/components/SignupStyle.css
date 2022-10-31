@@ -42,21 +42,10 @@
     justify-content: center;
     align-items: center;
     font-family: 'MICEGothic Bold';
-    margin-top: 35px;
+    margin-top: 20px;
     font-size: 26px;
     font-weight: 700;
     color: #5cc6e9;
-}
-
-.titleWrap2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'MICEGothic Bold';
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #262626;
 }
 
 .contentWrap{

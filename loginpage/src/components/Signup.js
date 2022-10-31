@@ -10,7 +10,7 @@ const User = {
     name : 'Limsuhan'
 }
 
-//로그인 컴포넌트
+//회원가입 컴포넌트
 export default function Signup() {
 
     const [email, setEmail] = useState('');

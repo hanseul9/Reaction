@@ -7,8 +7,8 @@
 
 .page {
     position: absolute;
-    top: 70px;
-    bottom: 70px;
+    top: 50px;
+    bottom: 50px;
     width: 100%;
     max-width: 500px;
     padding: 0 40px;

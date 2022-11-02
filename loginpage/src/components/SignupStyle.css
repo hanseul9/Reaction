@@ -7,8 +7,8 @@
 
 .page {
     position: absolute;
-    top: 30px;
-    bottom: 30px;
+    top: 5px;
+    bottom: 5px;
     width: 100%;
     max-width: 500px;
     padding: 0 40px;
@@ -27,11 +27,11 @@
 
 .backbutton{
     font-family: 'MICEGothic Bold';
-    width: 10;
+    width: 22px;
     height: 40px;
     border: none;
     font-size: 35px;
-    margin-top: 30px;
+    margin-top: 25px;
     background-color: #f7f7f7;
     cursor: pointer;
     border-radius: 10px;
@@ -42,7 +42,6 @@
     justify-content: center;
     align-items: center;
     font-family: 'MICEGothic Bold';
-    margin-top: 20px;
     font-size: 26px;
     font-weight: 700;
     color: #5cc6e9;
@@ -76,6 +75,16 @@
     border: none;
     font-size: 14px;
     font-weight: 400;
+}
+
+.overlapCheck{
+    font-family: 'MICEGothic Bold';
+    font-size: 14px;
+    border: 1px solid #e2e0e0;
+    border-radius: 6px;
+    background-color: white;
+    width: 20%;
+    cursor: pointer;
 }
 
 .input::placeholder{

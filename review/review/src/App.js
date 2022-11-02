@@ -5,8 +5,8 @@ import Sidebar from "./components/sidebar/Sidebar"
 function App() {
   return(
 
-    <div> {/*제일 상위 div*/}
-        <div> {/*sidebar을 오*/}
+    <> {/*제일 상위 노드*/}
+        <div> {/*아마 지도..?*/}
 
         </div>
 
@@ -17,7 +17,7 @@ function App() {
         </div>
         {/*side bar finish----------------------------------------------*/}
     
-    </div>
+    </>
  
   )
 

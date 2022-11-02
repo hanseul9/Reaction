@@ -1,12 +1,13 @@
-import './App.css';
-import Location from "./map";
+import Map from "./components/map/map";
 
 function App() {
-  return (
-    <div className="App">
-      <Location/>
+  return (
+    <div>
+      <div className="Map">
+        <Map/>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -1,13 +1,11 @@
-import Map from "./components/map/map";
+import Map from "./components/map/Map";
 
 function App() {
   return (
     <div>
-      <div className="Map">
-        <Map/>
-      </div>
+      <Map />
     </div>
-  )
+  );
 }
 
 export default App;

@@ -1,0 +1,23 @@
+[
+    {
+        "userName" : "testUser1",
+        "userURL" : "./test.PNG",
+        "reviewTitle" : "제목 : 맛있다",
+        "reviewContents" : "맛있었구 맛있었습니다 짱짱",
+        "imgURL" : "./test.PNG"
+    },
+    {
+        "userName" : "testUser2",
+        "userURL" : "./test.PNG",
+        "reviewTitle" : "냠냠쩝쩝",
+        "reviewContents" : "미식이네요",
+        "imgURL" : "./test.PNG"
+    },
+    {
+        "userName" : "testUser3",
+        "userURL" : "./test.PNG",
+        "reviewTitle" : "냠냠쩝쩝",
+        "reviewContents" : "번창하세요",
+        "imgURL" : "./test.PNG"
+    }
+]

@@ -4,7 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 import './components/Login/LoginStyle.css' //인덱스 스타일 적용
+
 import './components/Signup/SignupStyle.css' 
+
 import './components/error/ErrorPageStyle.css' 
 
 const element = document.getElementById('root')

@@ -107,7 +107,7 @@ export default function Signup() {
     }
 
     return (
-        <div className="page">
+        <div className="Spage">
           <Link to="/">
             <button className='backbutton' onClick={GoBackButton}>
               ❮

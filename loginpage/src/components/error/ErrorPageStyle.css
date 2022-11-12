@@ -6,6 +6,7 @@
 }
 
 .Errpage{
+    top : 50px;
     font-family: 'MICEGothic Bold';
     text-align: center;
 
@@ -13,7 +14,7 @@
 
 .loginbutton{
     font-family: 'MICEGothic Bold';
-    width: 100%;
+    width: 30%;
     height: 48px;
     border: none;
     font-size: 24px;

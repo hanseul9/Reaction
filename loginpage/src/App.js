@@ -1,12 +1,17 @@
 //로그인 컴포넌트를 띄운다.
 
-import Login from "./components/Signup/Signup.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./components/Login/Login.js";
+import Signup from "./components/Signup/Signup.js";
 
 function App() {
   return (
-    <div>
-      <Login />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

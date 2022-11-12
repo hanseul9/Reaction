@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 //회원정보 더미 데이터
 const User = {
@@ -112,9 +113,11 @@ export default function Login() {
             <button onClick={onClickConfirmButton} disabled={notAllow} className='bottomButton'>
               로그인
             </button>
-            <button disabled={false} className='bottomButton2'>
-              회원가입
-            </button>
+            <Link to="/signup">
+              <button disabled={false} className='bottomButton2'>
+                회원가입
+              </button>
+            </Link>
           </div>
         </div>
       );

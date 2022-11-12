@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useLocation, Link } from "react-router-dom"; 
 
 //회원정보 더미 데이터
 const User = {
@@ -95,19 +96,23 @@ export default function Signup() {
 
     const overlapCheckButton = () => { //중복확인 버튼을 눌렀을때 액션
       if(email === User.email) {
-        alert('이미 사용중인 아이디 입니다.')
+        alert('이미 사용중인 아이디 입니다.');
       } else {
         alert("사용 가능한 아이디 입니다.");
       }
     } 
 
+    const GoBackButton = () => {
+      
+    }
+
     return (
         <div className="page">
-          <div>
-          <button className='backbutton'>
-            ❮
-          </button>
-          </div>
+          <Link to="/">
+            <button className='backbutton' onClick={GoBackButton}>
+              ❮
+            </button>
+          </Link>
 
           <div className="titleWrap1">
             회원가입

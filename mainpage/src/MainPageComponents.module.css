@@ -1,0 +1,107 @@
+.SITE_CONTAINER{
+    background-color:rgb(245, 245, 220);
+    margin:0px;
+    padding: 0px;
+    font-family: 'Abril Fatface', cursive;
+}
+.MAIN_CONTAINER{
+    width: 514px;
+    height: 630px;
+    margin-top: 74px;
+    margin-left: 0px;
+    padding:0%;
+}
+
+.TOP_BUTTON_IMG{
+    margin: 20px auto 20px auto;
+    margin-left: 20px; 
+    width: 40px;
+    height: 40px;
+    object-fit:cover;
+}
+.BOTTOM_BUTTON_IMG{
+    margin: 20px auto 20px auto;
+    margin-left: 20px; 
+    width: 40px;
+    height: 40px;
+    object-fit:cover;
+}
+.MAIN_IMG{
+     margin-top : 100px;
+     margin-left: 130px;
+    width:514px;
+    height:330px;
+    object-fit:cover;
+}
+.TOP_CONTAINER{
+    position: fixed;
+    top:0px;
+    margin-left: 0%;
+    vertical-align: top;
+    width: 100%;
+    height: 74px;
+    background-color: azure;
+}
+.BOTTOM_CONTAINER{
+    margin :0%;
+    padding:0%;
+    position: fixed;
+    bottom:0px;
+    vertical-align: bottom;
+    width: 100%;
+    height: 74px;
+    background-color: #1C1C1C;
+}
+.TOP_BUTTON_CONTAINER{
+    margin:0px;
+    padding:0px;
+    vertical-align: top;
+    width: 80px;
+    height: 74px;
+}
+.MAIN_IMG_ARROW{
+    left: 830px;
+    top: 400px;
+    position:absolute;
+}
+.MAIN_IMG_ARROW_OUTWARD{
+    left: 1100px;
+    top: 500px;
+    position:absolute;
+}
+.BOTTOM_SPAN{
+    color: white;
+    font-size:medium;
+    margin: 20px auto 20px auto;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+.H1_STYLE_MAP{
+    left:600px;
+    top:300px;
+    font-size: 200px;
+    vertical-align: top;
+    position:absolute;
+}
+.H1_STYLE_FOOD{
+    left : 630px;
+    top : 50px;
+    font-size : 150px;
+    vertical-align : top;
+    position : absolute;
+}
+.H1_STYLE_DRINK{
+    left : 980px;
+    top : 200px;
+    font-size: 150px;
+    vertical-align : top;
+    position : absolute;
+}
+.H1_STYLE_SERVICE{
+    left : 1000px;
+    top : 100px;
+    font-size : 25px;
+    vertical-align : top;
+    position : absolute;
+}

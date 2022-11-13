@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "../sidebar/Sidebar";
 import MarkerModal from "./MarkerModal";
-import positions from "./positions.json";
+//import positions from "./positions.json";
 
 const Map = () => {
   const [sidebarData, setSidebarData] = useState({});

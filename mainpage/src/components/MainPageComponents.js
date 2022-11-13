@@ -1,4 +1,5 @@
 import React,{Component}from 'react';
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import styles from './MainPageComponents.module.css';
 
 class MainPageComponents extends Component {
@@ -7,8 +8,11 @@ class MainPageComponents extends Component {
         <body className ={styles.SITE_CONTAINER}>
             <div className ="MAIN">
                 <div className = {styles.TOP_CONTAINER}>
+                    <h1 className={styles.H1_STYLE_LOGIN}><NavLink to="/login">Login</NavLink></h1>
+                    <h1 className={styles.H1_STYLE_MENU_MAP}><NavLink to="/map">Map</NavLink></h1>
+                    <h1 className={styles.H1_STYLE_MENU_SIDEBAR}><NavLink to="/sidebar">Side Bar</NavLink></h1>
                     <div className={styles.TOP_BUTTON_CONTAINER}>
-                        <img className={styles.TOP_BUTTON_IMG} alt="homebutton" src="images/homebutton.gif" fetchpriority="high"/>    
+                        <NavLink to="/"><img className={styles.TOP_BUTTON_IMG} alt="homebutton" src="images/homebutton.gif" fetchpriority="high"/></NavLink>
                     </div>
                 </div>
                 <div className={styles.MAIN_CONTAINER}>

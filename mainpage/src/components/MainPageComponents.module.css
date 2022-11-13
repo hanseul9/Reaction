@@ -77,6 +77,30 @@
     bottom: 30px;
     right: 10px;
 }
+.H1_STYLE_LOGIN{
+    color: black;
+    left:1350px;
+    top:5px;
+    font-size: 20px;
+    vertical-align: top;
+    position:absolute;
+}
+.H1_STYLE_MENU_MAP{
+    color: black;
+    left:1250px;
+    top:5px;
+    font-size: 20px;
+    vertical-align: top;
+    position:absolute;
+}
+.H1_STYLE_MENU_SIDEBAR{
+    color: black;
+    left:1100px;
+    top:5px;
+    font-size: 20px;
+    vertical-align: top;
+    position:absolute;
+}
 .H1_STYLE_MAP{
     left:600px;
     top:300px;

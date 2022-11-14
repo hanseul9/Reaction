@@ -21,80 +21,6 @@ const Map = () => {
     // 지도 생성
     var map = new kakao.maps.Map(container, options);
 
-    // 마커 표시할 위치, 내용 가지고 있는 객체 배열입니다
-    var positions = [
-      {
-        placeId: 0,
-        title: "나폴레옹과자점 본점",
-        content: "<div>나폴레옹과자점 본점</div>",
-        locate: "<div>서울 성북구 성북로 7</div>",
-        latlng: new kakao.maps.LatLng(37.5889026336539, 127.00509224918207),
-      },
-      {
-        placeId: 1,
-        title: "몽마르언덕",
-        content: "<div>몽마르언덕</div>",
-        locate: "<div>서울 종로구 낙산길 196 4층</div>",
-        latlng: new kakao.maps.LatLng(37.58132928039299, 127.01205996422233),
-      },
-      {
-        placeId: 2,
-        title: "스타동 한성대점",
-        content: "<div>스타동 한성대점</div><div></div>",
-        locate: "<div>서울 성북구 삼선교로16길 40</div>",
-        latlng: new kakao.maps.LatLng(37.587201649454556, 127.0105380835246),
-      },
-      {
-        placeId: 3,
-        title: "시올돈 성북직영점",
-        content: "<div>시올돈 성북직영점</div><div></div>",
-        locate: "<div>서울 성북구 성북로5길 20 1층</div>",
-        latlng: new kakao.maps.LatLng(37.58895448241943, 127.0040109628112),
-      },
-      {
-        placeId: 4,
-        title: "100년 설렁탕 본점",
-        content: "<div>100년 설렁탕 본점</div><div></div>",
-        locate: "<div>서울 성북구 삼선교로 38 1층</div>",
-        latlng: new kakao.maps.LatLng(37.588086929452324, 127.00990699145088),
-      },
-      {
-        placeId: 5,
-        title: "한성대 양꼬치",
-        content: "<div>한성대 양꼬치</div><div></div>",
-        locate: "<div>서울 성북구 동소문로6길 14-31</div>",
-        latlng: new kakao.maps.LatLng(37.58807809115089, 127.00759158512672),
-      },
-      {
-        placeId: 6,
-        title: "방목",
-        content: "<div>방목</div><div></div>",
-        locate: "<div>서울 성북구 동소문로2길 21</div>",
-        latlng: new kakao.maps.LatLng(37.587915907348695, 127.00767082440503),
-      },
-      {
-        placeId: 7,
-        title: "종로곱창",
-        content: "<div>종로곱창</div><div></div>",
-        locate: "<div>서울 성북구 동소문로6길 8</div>",
-        latlng: new kakao.maps.LatLng(37.58881236662964, 127.00809550587265),
-      },
-      {
-        placeId: 8,
-        title: "홍추곱창카페",
-        content: "<div>홍추곱창카페</div><div></div>",
-        locate: "<div>서울 성북구 삼선교로10길 16 1층</div>",
-        latlng: new kakao.maps.LatLng(37.58721753513167, 127.00911715666365),
-      },
-      {
-        placeId: 9,
-        title: "",
-        content: "<div>새 장소 추가하기</div>",
-        locate: "<div></div>",
-        latlng: new kakao.maps.LatLng(setLatitude, setLongitude),
-      },
-    ];
-
     // 마커 이미지 주소
     var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
 
@@ -108,7 +34,7 @@ const Map = () => {
       // 마커 생성
       var marker = new kakao.maps.Marker({
         map: map, // 마커를 표시할 지도
-        position: positions[i].latlng, // 마커의 위치
+        position: new kakao.maps.LatLng(positions[i].lat, positions[i].lng), // 마커의 위치
         image: markerImage, // 마커 이미지
       });
 

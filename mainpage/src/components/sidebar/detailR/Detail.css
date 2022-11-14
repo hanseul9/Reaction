@@ -1,0 +1,29 @@
+.board {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  border: 2px solid black;
+}
+.contents_1 {
+  padding: 10px;
+  width: 80%;
+  float: left;
+  height: 80px;
+  background-color: aqua;
+}
+
+.contents_2 {
+  background-color: pink;
+  display: inline-block;
+}
+
+#userImg {
+  width: 30px;
+  height: 30px;
+}
+#reviewImg {
+  margin-top: 4px;
+  width: 90px;
+  height: 90px;
+}

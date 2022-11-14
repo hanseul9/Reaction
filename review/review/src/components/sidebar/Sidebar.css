@@ -7,7 +7,7 @@
     height: 1000px;
     padding: 9%;
     
-  }
+}
 
   .reviewImage{
     width: 200px;
@@ -19,10 +19,20 @@
     overflow: hidden;
   }
 
-.nameStar{
-    display: inline-block;
-    margin-right: 230px;
-}
+  #name{
+    float: left; 
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  #star{
+    width: auto;
+    float: right;  
+    font-size: 20px;
+    margin-top: 4px;
+
+
+  }
 
 .slider{
     

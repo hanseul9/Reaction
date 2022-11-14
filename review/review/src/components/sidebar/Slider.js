@@ -1,36 +1,30 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 1
-    };
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 1
+};
+
+
+export default function SimpleSlider({reviewData}){
+  
     return (
-      <div> 
+      <> 
         
         <Slider {...settings}>
-          <div>
-            <img className = "reviewImage" src="test.PNG"></img>
-          </div>
-          <div>
-            <img className = "reviewImage" src="test.PNG"></img>
-          </div>
-          <div>
-            <img className = "reviewImage" src="test.PNG"></img>  
-          </div>
-          <div>
-            <img className = "reviewImage" src="test.PNG"></img>
-          </div>
-          <div>
-            <img className = "reviewImage" src="test.PNG"></img>
-          </div>
+
+          
+          {reviewData.detailReview.map((data,i) => (
+             <div>
+              <img className = "reviewImage" src={data.imgURL}/>
+           </div> 
+          )) }
+
         </Slider>
-      </div>
+      </>
     );
   }
-}

@@ -6,33 +6,47 @@ import Slider from "./Slider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import reviewData from "./detailR/detailR.json"; //데이터 정보 끌어다가 여기서 컴포넌트 호출할때 인자로 넘겨줌
+import reviewData from "./reviewData.json"; //데이터 정보
 import DetailBoard from "./detailR/DetailBoard";
+import ShortBoard from "./shortR/ShortBoard";
+
 
 
 //사이드 바의 틀
-export default function sidebar(){
+export default function sidebar({placeId=0}){  // 가게들은 placeId로 구분
     return( 
         <div className="sidebar">
             <br/>
+                
             <div>
-                <h2 className="nameStar">가게 이름</h2>
-
-                <block>
-                    <StarRating /> 
-                </block>   
+                <div id="name"> 
+                    {reviewData[placeId].name} 
+                </div>
+                
+                <div id="star">
+                    <StarRating starRating = {reviewData[placeId].starRating} length={5}/>       
+                </div>   
             </div>
             
-            <br/><br/>
+            <br/><br/><br/>
 
             <div className="slider">
-                <Slider /> 
+            <Slider reviewData = {reviewData[placeId]} /> 
+            
             </div>
 
             <br/><br/><br/>
 
             <div className="detailReview">
-                <DetailBoard data={reviewData} /> 
+                <DetailBoard reviewData={reviewData[placeId]} /> 
+                
+            </div>
+
+            <br/><br/>
+
+            <div className="shortReview">
+                <ShortBoard reviewData={reviewData[placeId]} /> 
+                
             </div>
 
         

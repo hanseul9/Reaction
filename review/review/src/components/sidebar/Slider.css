@@ -1,0 +1,17 @@
+
+
+    .slick-list{ 
+    	width: 300px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: #f0f9ff;
+    }
+    
+    .slick-prev:before, .slick-next:before{ 
+    	font-family: 'slick';
+        font-size: 40px;
+        line-height: 1;
+        opacity: .75;
+        color: #000000;
+        -webkit-font-smoothing: antialiased;
+    }

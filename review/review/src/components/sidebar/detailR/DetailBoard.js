@@ -1,24 +1,28 @@
-import React from "react";
+import React from "react"; 
+
 import DetailContents from "./DetailContents";
-//import "./Detail.css";
+import "./scroll.css";
 
 
-export default function DetailBoard(props){
+
+export default function DetailBoard({reviewData}){
     return (
         <>
-            <div className="board">
-                { props.data.map ( (data, i) =>
-                    ( <DetailContents key={i}
-                        userName={data.userName}
-                        userURL={data.userURL}
-                        imgURL={data.imgURL}
-                        reviewTitle={data.reviewTitle}
-                        reviewContents={data.reviewContents}
-                    /> 
-                    ) ) 
-                    }
+            <div id="scroll">   {/* id="scroll" */}
+
+            {reviewData.detailReview.map((data,i) => (
+                console.log(data.userName),
+                <DetailContents 
+                userURL={data.userURL}
+                userName={data.userName}
+                reviewTitle={data.reviewTitle}
+                reviewContents={data.reviewContents}
+                imgURL={data.imgURL}
+                />
+
+            )) } 
             </div>
-            
+     
         </>
-    )
+    );
 }

@@ -1,21 +1,22 @@
 import React from "react";
-import "./Detail.css";
+import "./detail.css";
 
-export default function DetailContents({userName, userURL, imgURL, reviewTitle, reviewContents}){
+export default function DetailContents({userURL, userName, reviewTitle, reviewContents, imgURL}){
+
     return (
         <>
-            <div className="board">
+            <div className="detailBoard">
 
                 <section className="contents_1"> 
-                    <div> 
+                     <div> 
                         <img src={userURL} id="userImg" /> 
                         &nbsp;
-                         {userName}
-                         &nbsp;
-                         {reviewTitle}
+                        {userName}
+                        &nbsp;
+                        {reviewTitle}
                     </div>
-                    <br/>
-                    <div> 
+                        
+                    <div id="contents"> 
                         {reviewContents}
                     </div>
                 </section>
@@ -24,6 +25,7 @@ export default function DetailContents({userName, userURL, imgURL, reviewTitle, 
                     <img src={imgURL} id="reviewImg" />
                 </section>
             </div>
+               
         </>
     )
 }

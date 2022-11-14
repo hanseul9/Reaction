@@ -1,25 +1,55 @@
-[
-    {
-        "userName" : "성이름",
-        "userURL" : "./test.PNG",
-        "reviewTitle" : "제목 : 맛있다",
-        "reviewContents" : "맛있었구 맛있었습니다 짱짱",
-        "imgURL" : "./test.PNG"
+[   
+    {     "__comment": "0번 가게",
+          "name": "나폴레옹과자점 본점",
+          "starRating" : 4,
+        
+        "detailReview": [ 
+            {
+                "userName" : "성이름",
+                "userURL" : "./test.PNG",
+                "reviewTitle" : "제목 : 맛있다",
+                "reviewContents" : "맛있었구 맛있었습니다 짱짱",
+                "imgURL" : "./test.PNG"
+            },
+            {
+                "userName" : "testUser",
+                "userURL" : "./test.PNG",
+                "reviewTitle" : "냠냠쩝쩝",
+                "reviewContents" : "맛있당",
+                "imgURL" : "./test.PNG"
+            },
+            {
+                "userName" : "testUser",
+                "userURL" : "./test.PNG",
+                "reviewTitle" : "냠냠쩝쩝",
+                "reviewContents" : "맛있당",
+                "imgURL" : "./test.PNG"
+            }
+        ],
+        "shortReview": [
+            {
+                "userName" : "성이름",
+                "userImg" : "./test.PNG",
+                "shortContents" : "맛있었구 맛있었습니다 짱짱",
+                "time" : "5-30 | 15:47"
+            },
+            {
+                "userName" : "성이름",
+                "userImg" : "./test.PNG",
+                "shortContents" : "맛있었구 맛있었습니다 짱짱",
+                "time" : "5-30 | 15:47"
+            },
+            {
+                "userName" : "성이름",
+                "userImg" : "./test.PNG",
+                "shortContents" : "맛있었구 맛있었습니다 짱짱",
+                "time" : "5-30 | 15:47"
+            }
+        ]
     },
     {
-        "userName" : "testUser",
-        "userURL" : "./test.PNG",
-        "reviewTitle" : "냠냠쩝쩝",
-        "reviewContents" : "맛있당",
-        "imgURL" : "./test.PNG"
-    },
-    {
-        "userName" : "testUser",
-        "userURL" : "./test.PNG",
-        "reviewTitle" : "냠냠쩝쩝",
-        "reviewContents" : "맛있당",
-        "imgURL" : "./test.PNG"
+
     }
+    
 ]
-  
   

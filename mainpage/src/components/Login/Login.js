@@ -59,7 +59,7 @@ export default function Login() {
 
     return (
         <div className="Lpage">
-          <Link to="/">
+          <Link to="/"> {/*메인화면으로 뒤로가기*/}
           <button className='backbutton'>
             ❮
           </button>
@@ -113,7 +113,7 @@ export default function Login() {
             <button onClick={onClickConfirmButton} disabled={notAllow} className='bottomButton'>
               로그인
             </button>
-            <Link to="/login/signup">
+            <Link to="/login/signup"> {/*회원가입 페이지로 가기*/}
               <button disabled={false} className='bottomButton2'>
                 회원가입
               </button>

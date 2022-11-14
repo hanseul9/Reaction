@@ -108,7 +108,7 @@ export default function Signup() {
 
     return (
         <div className="Spage">
-          <Link to="/login">
+          <Link to="/login"> {/*로그인 페이지로 뒤로가기*/}
             <button className='backbutton' onClick={GoBackButton}>
               ❮
             </button>
@@ -205,10 +205,11 @@ export default function Signup() {
           </div>
     
           <div>
+          <Link to="/map">{/*맵 화면으로 가기*/}
             <button onClick={onClickConfirmButton} disabled={notAllow} className='bottomButton'>
               회원가입 완료
             </button>
-            
+          </Link>
           </div>
         </div>
       );

@@ -1,0 +1,64 @@
+[   
+    {     "__comment": "0번 가게",
+          "name": "나폴레옹 과자점 본점",
+          "starRating" : 4,
+        
+        "detailReview": [ 
+            {
+                "userId" : 1,
+                "userName" : "성이름",
+                "userURL" : "userImg/죠르디.PNG",
+
+                "reviewTitle" : "제목 : 맛있다응응~",
+                "reviewContents" : "맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+                "imgURL" : "reviewImg/NP_0_1.PNG", "__comment": "<- 리뷰 이미지"
+            },
+            {
+                "userId" : 1,
+                "userName" : "testUser",
+                "userURL" : "userImg/죠르디.PNG",
+
+                "reviewTitle" : "냠냠쩝쩝",
+                "reviewContents" : "맛있당",
+                "imgURL" : "reviewImg/NP_0_2.PNG"
+            },
+            {
+                "userId" : 1,
+                "userName" : "testUser",
+                "userURL" : "userImg/죠르디.PNG",
+
+                "reviewTitle" : "냠냠쩝쩝",
+                "reviewContents" : "맛있당",
+                "imgURL" : "reviewImg/NP_0_3.PNG"
+            }
+        ],
+        "shortReview": [
+            {
+                "userId" : 1,
+                "userName" : "성이름",
+                "userURL" : "userImg/죠르디.PNG",
+                "shortContents" : "맛있었구 맛있었습니다 짱짱",
+                "time" : "5-30 | 15:47"
+            },
+            {
+                "userId" : 1,
+                "userName" : "성이름",
+                "userURL" : "userImg/죠르디.PNG",
+                "shortContents" : "맛있었구 맛있었습니다 짱짱",
+                "time" : "5-30 | 15:47"
+            },
+            {
+                "userId" : 1,
+                "userName" : "성이름",
+                "userURL" : "userImg/죠르디.PNG",
+                "shortContents" : "맛있었구 맛있었습니다 짱짱",
+                "time" : "5-30 | 15:47"
+            }
+        ]
+    },
+    {
+
+    }
+    
+]
+  

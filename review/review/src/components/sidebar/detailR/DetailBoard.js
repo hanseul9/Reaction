@@ -1,26 +1,36 @@
 import React from "react"; 
 
 import DetailContents from "./DetailContents";
-import "./scroll.css";
+import LocalContents from "./LocalContents";
+import styles from "./scroll.module.css";
+import userData from "../../userData.json"
+
+<div className={styles.container}></div>
 
 
-
-export default function DetailBoard({reviewData}){
+export default function DetailBoard({reviewData, userId, placeId}){
     return (
         <>
-            <div id="scroll">   {/* id="scroll" */}
+            <div id={styles.scroll}>   {/* id="scroll" */}
+            {
+                //window.localStorage.clear()
+            }
 
-            {reviewData.detailReview.map((data,i) => (
-                console.log(data.userName),
-                <DetailContents 
-                userURL={data.userURL}
-                userName={data.userName}
-                reviewTitle={data.reviewTitle}
-                reviewContents={data.reviewContents}
-                imgURL={data.imgURL}
-                />
+            {localStorage.length !== 0 && <LocalContents placeId={placeId} />}
 
-            )) } 
+            { reviewData.detailReview.map((data,i) => {
+
+                   return <DetailContents 
+                    userImg={userData[data.userId].userImg}
+                    userName={userData[data.userId].userName}
+                    reviewTitle={data.reviewTitle}
+                    reviewContents={data.reviewContents}
+                    imgURL={data.imgURL}
+                    />
+                }
+            )}
+
+
             </div>
      
         </>

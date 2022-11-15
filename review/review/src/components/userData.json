@@ -1,0 +1,24 @@
+[
+    {
+        "userId": 0,
+        "userName" : "성이름",
+        "userImg" : "./userImg/죠르디.PNG",
+        "userEmail" : "abc@naver.com",
+        "userPassword" : "password"
+    },
+    {
+        "userId": 2,
+        "userName" : "라라라",
+        "userImg" : "./test.PNG",
+        "userEmail" : "def@naver.com",
+        "userPassword" : "password"  
+    },
+    {
+        "userId": 3,
+        "userName" : "3번유저임당",
+        "userImg" : "./test.PNG",
+        "userEmail" : "def@naver.com",
+        "userPassword" : "password"  
+    }
+
+]

@@ -1,7 +1,7 @@
 import React from "react";
 import "./detail.css";
 
-export default function DetailContents({userURL, userName, reviewTitle, reviewContents, imgURL}){
+export default function DetailContents({userName, userImg, reviewTitle, reviewContents, imgURL}){
 
     return (
         <>
@@ -9,7 +9,7 @@ export default function DetailContents({userURL, userName, reviewTitle, reviewCo
 
                 <section className="contents_1"> 
                      <div> 
-                        <img src={userURL} id="userImg" /> 
+                        <img src={userImg} id="userImg" /> 
                         &nbsp;
                         {userName}
                         &nbsp;

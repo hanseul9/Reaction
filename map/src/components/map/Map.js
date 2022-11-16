@@ -16,6 +16,7 @@ const Map = () => {
     var options = {
       center: new kakao.maps.LatLng(37.58575786444733, 127.0098896998893), // 지도 중심 좌표
       level: 4, // 지도 확대 레벨
+      disableDoubleClickZoom: true // 지도 더블 클릭시 확대 금지
     };
 
     // 지도 생성

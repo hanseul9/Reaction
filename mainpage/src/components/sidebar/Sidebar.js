@@ -2,8 +2,8 @@ import React from "react";
 import "./StarRating";
 import "./Sidebar.css";
 import StarRating from "./StarRating";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import Slider from "./Slider";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdArrowBackIosNew, MdArrowForwardIos, MdTranslate } from "react-icons/md";
 

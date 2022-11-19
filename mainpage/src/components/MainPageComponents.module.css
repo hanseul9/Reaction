@@ -11,7 +11,10 @@
     margin-left: 0px;
     padding:0%;
 }
-
+.NAVLINK{
+    color: inherit;
+    text-decoration: inherit;
+}
 .TOP_BUTTON_IMG{
     margin: 20px auto 20px auto;
     margin-left: 20px; 
@@ -72,13 +75,14 @@
 .BOTTOM_SPAN{
     color: white;
     font-size:medium;
-    margin: 20px auto 20px auto;
+    margin: 20px auto auto 20px;
     position: absolute;
     bottom: 30px;
     right: 10px;
 }
 .H1_STYLE_LOGIN{
-    color: black;
+    color: inherit;
+    text-decoration: inherit;
     left:1350px;
     top:5px;
     font-size: 20px;

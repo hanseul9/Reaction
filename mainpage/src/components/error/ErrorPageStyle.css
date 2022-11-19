@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.Errpage{
+    top : 50px;
+    font-family: 'MICEGothic Bold';
+    text-align: center;
+
+}
+
+.moveMainbutton{
+    font-family: 'MICEGothic Bold';
+    width: 30%;
+    height: 48px;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #5cc6e9;
+    border-radius: 32px;
+    color: white;
+    margin-bottom: 16px;
+    cursor: pointer;
+}

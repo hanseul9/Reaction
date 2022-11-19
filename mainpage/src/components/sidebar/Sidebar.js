@@ -123,7 +123,7 @@ export default function Sidebar({ placeId=0, userId=1, data, isClickMarker, clic
                 
                 </div>
 
-                <br/><br/>
+                <br/><br/><br/><br/>
 
 
                 <div>

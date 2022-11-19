@@ -1,31 +1,42 @@
 [
     {
         "userId": 0,
-        "userName" : "0번유저",
-        "userImg" : "./userImg/죠르디.PNG",
-        "userEmail" : "abc@naver.com",
-        "userPassword" : "password"
+        "userName" : "성이름",
+        "userImg" : "./test.PNG",
+        "userEmail" : "0@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
     },
     {
         "userId": 1,
-        "userName" : "1번유저",
-        "userImg" : "./userImg/죠르디.PNG",
-        "userEmail" : "abc@naver.com",
-        "userPassword" : "password"
+        "userName" : "전태화",
+        "userImg" : "./test.PNG",
+        "userEmail" : "1@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
     },
     {
         "userId": 2,
-        "userName" : "2번유저",
+        "userName" : "권민자",
         "userImg" : "./test.PNG",
-        "userEmail" : "def@naver.com",
-        "userPassword" : "password"  
+        "userEmail" : "2@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
     },
     {
         "userId": 3,
-        "userName" : "3번유저임당",
+        "userName" : "양시은",
         "userImg" : "./test.PNG",
-        "userEmail" : "def@naver.com",
-        "userPassword" : "password"  
+        "userEmail" : "3@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
+    },
+    {
+        "userId": 4,
+        "userName" : "황재빈",
+        "userImg" : "./test.PNG",
+        "userEmail" : "4@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
     }
-
 ]

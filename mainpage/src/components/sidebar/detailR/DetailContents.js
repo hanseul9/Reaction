@@ -1,5 +1,5 @@
 import React from "react";
-import "./detail.css";
+import "./Detail.css";
 
 export default function DetailContents({userName, userImg, reviewTitle, reviewContents, imgURL}){
 

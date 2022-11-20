@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom'; //페이지 이동
 import styles from './LoginStyle.module.css'; //CSS
-import UserData from "../jsonData/userData.json"; //데이터 정보
+import UserData from "../userData.json"; //데이터 정보
 
 
 //로그인 컴포넌트

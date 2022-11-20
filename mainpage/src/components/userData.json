@@ -1,7 +1,7 @@
 [
     {
         "userId": 0,
-        "userName" : "성이름",
+        "userName" : "서한슬",
         "userImg" : "./test.PNG",
         "userEmail" : "0@naver.com",
         "userPassword" : "asdasd123!",
@@ -9,7 +9,7 @@
     },
     {
         "userId": 1,
-        "userName" : "전태화",
+        "userName" : "정재훈",
         "userImg" : "./test.PNG",
         "userEmail" : "1@naver.com",
         "userPassword" : "asdasd123!",
@@ -17,7 +17,7 @@
     },
     {
         "userId": 2,
-        "userName" : "권민자",
+        "userName" : "임수한",
         "userImg" : "./test.PNG",
         "userEmail" : "2@naver.com",
         "userPassword" : "asdasd123!",
@@ -25,7 +25,7 @@
     },
     {
         "userId": 3,
-        "userName" : "양시은",
+        "userName" : "정미르",
         "userImg" : "./test.PNG",
         "userEmail" : "3@naver.com",
         "userPassword" : "asdasd123!",
@@ -33,7 +33,7 @@
     },
     {
         "userId": 4,
-        "userName" : "황재빈",
+        "userName" : "홍길동",
         "userImg" : "./test.PNG",
         "userEmail" : "4@naver.com",
         "userPassword" : "asdasd123!",

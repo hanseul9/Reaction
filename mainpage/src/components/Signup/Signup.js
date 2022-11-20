@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from "react-router-dom"; 
 import styles from './SignupStyle.module.css';
-import UserData from "../jsonData/userData.json"; //데이터 정보
+import UserData from "../userData.json"; //데이터 정보
 
 
 
@@ -160,7 +160,7 @@ export default function Signup() {
                 )
               }
             </div>
-            <div style={{marginTop:"26px"}} className="inputTitle">비밀번호 확인</div >
+            <div style={{marginTop:"26px"}} className={styles.inputTitle}>비밀번호 확인</div >
             <div className={styles.inputWrap}>
               <input 
               type= 'password'

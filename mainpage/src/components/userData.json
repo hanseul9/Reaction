@@ -1,0 +1,42 @@
+[
+    {
+        "userId": 0,
+        "userName" : "서한슬",
+        "userImg" : "./test.PNG",
+        "userEmail" : "0@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
+    },
+    {
+        "userId": 1,
+        "userName" : "정재훈",
+        "userImg" : "./test.PNG",
+        "userEmail" : "1@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
+    },
+    {
+        "userId": 2,
+        "userName" : "임수한",
+        "userImg" : "./test.PNG",
+        "userEmail" : "2@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
+    },
+    {
+        "userId": 3,
+        "userName" : "정미르",
+        "userImg" : "./test.PNG",
+        "userEmail" : "3@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
+    },
+    {
+        "userId": 4,
+        "userName" : "홍길동",
+        "userImg" : "./test.PNG",
+        "userEmail" : "4@naver.com",
+        "userPassword" : "asdasd123!",
+        "isLogin" : false
+    }
+]

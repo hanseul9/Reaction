@@ -1,22 +1,39 @@
-import React from "react";
-import DetailContents from "./DetailContents";
-//import "./Detail.css";
+import React from "react"; 
 
-export default function DetailBoard(props) {
-  return (
-    <>
-      <div className="boardWrapper">
-        {props.data.map((data, i) => (
-          <DetailContents
-            key={i}
-            userName={data.userName}
-            userURL={data.userURL}
-            imgURL={data.imgURL}
-            reviewTitle={data.reviewTitle}
-            reviewContents={data.reviewContents}
-          />
-        ))}
-      </div>
-    </>
-  );
+import DetailContents from "./DetailContents";
+import LocalContents from "../LocalContents";
+import styles from "./scroll.module.css";
+import userData from "../../userData.json"
+
+<div className={styles.container}></div>
+
+
+export default function DetailBoard({reviewData, userId, placeId}){
+    return (
+        <>
+            <div id={styles.scroll}>   {/* id="scroll" */}
+            {
+               //window.localStorage.clear()
+            }
+
+            {localStorage.length !== 0 && <LocalContents placeId={placeId} reviewType="R" />}
+            
+
+            { reviewData.detailReview.map((data,i) => {
+
+                   return <DetailContents 
+                    userImg={userData[data.userId].userImg}
+                    userName={userData[data.userId].userName}
+                    reviewTitle={data.reviewTitle}
+                    reviewContents={data.reviewContents}
+                    imgURL={data.imgURL}
+                    />
+                }
+            )}
+
+
+            </div>
+     
+        </>
+    );
 }

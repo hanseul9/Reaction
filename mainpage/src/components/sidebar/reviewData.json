@@ -1,57 +1,470 @@
-[   
-    {     "__comment": "0번 가게",
-          "name": "나폴레옹 과자점 본점",
-          "starRating" : 4,
-        
-        "detailReview": [ 
-            {
-                "userId" :  0,
-                "reviewTitle" : "제목 : 맛있다응응~",
-                "reviewContents" : "맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
-                "imgURL" : "images/detailreviewImg/0/1.PNG", "__comment": "<- 리뷰 이미지"
-            },
-            {
-                "userId" : 1,
+[
+  {
+    "__comment": "0번 가게",
+    "name": "나폴레옹 과자점 본점",
+    "starRating": 4,
 
-                "reviewTitle" : "냠냠쩝쩝",
-                "reviewContents" : "맛있당",
-                "imgURL" : "images/detailreviewImg/0/2.PNG"
-            },
-            {
-                "userId" : 2,
+    "detailReview": [
+      {
+        "userId": 0,
+        "reviewTitle": "제목 : 맛있다응응~",
+        "reviewContents": "맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+        "imgURL": "images/detailreviewImg/0/1.PNG",
+        "__comment": "<- 리뷰 이미지"
+      },
+      {
+        "userId": 1,
 
-                "reviewTitle" : "냠냠쩝쩝",
-                "reviewContents" : "맛있당",
-                "imgURL" : "images/detailreviewImg/0/3.PNG"
-            }
-        ],
-        "shortReview": [
-            {
-                "userId" : 0,
-                "userName" : "성이름",
-                "userURL" : "userImg/죠르디.PNG",
-                "shortContents" : "맛있었구 맛있었습니다 짱짱",
-                "time" : "5-30 | 15:47"
-            },
-            {
-                "userId" : 1,
-                "userName" : "성이름",
-                "userURL" : "userImg/죠르디.PNG",
-                "shortContents" : "맛있었구 맛있었습니다 짱짱",
-                "time" : "5-30 | 15:47"
-            },
-            {
-                "userId" : 2,
-                "userName" : "성이름",
-                "userURL" : "userImg/죠르디.PNG",
-                "shortContents" : "맛있었구 맛있었습니다 짱짱",
-                "time" : "5-30 | 15:47"
-            }
-        ]
-    },
-    {
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/2.PNG"
+      },
+      {
+        "userId": 2,
 
-    }
-    
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/3.PNG"
+      }
+    ],
+    "shortReview": [
+      {
+        "userId": 0,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 1,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 2,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      }
+    ]
+  },
+  {
+    "__comment": "1번 가게",
+    "name": "몽마르언덕",
+    "starRating": 4,
+
+    "detailReview": [
+      {
+        "userId": 0,
+        "reviewTitle": "제목 : 맛있다응응~",
+        "reviewContents": "몽마르 언덕~~~맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+        "imgURL": "images/detailreviewImg/0/1.PNG",
+        "__comment": "<- 리뷰 이미지"
+      },
+      {
+        "userId": 1,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/2.PNG"
+      },
+      {
+        "userId": 2,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/3.PNG"
+      }
+    ],
+    "shortReview": [
+      {
+        "userId": 0,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 1,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 2,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      }
+    ]
+  },
+  {
+    "__comment": "2번 가게",
+    "name": "스타동 한성대점",
+    "starRating": 4,
+
+    "detailReview": [
+      {
+        "userId": 0,
+        "reviewTitle": "제목 : 맛있다응응~",
+        "reviewContents": "스타동 한성대점 맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+        "imgURL": "images/detailreviewImg/0/1.PNG",
+        "__comment": "<- 리뷰 이미지"
+      },
+      {
+        "userId": 1,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/2.PNG"
+      },
+      {
+        "userId": 2,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/3.PNG"
+      }
+    ],
+    "shortReview": [
+      {
+        "userId": 0,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 1,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 2,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      }
+    ]
+  },
+  {
+    "__comment": "3번 가게",
+    "name": "시올돈 성북직영점",
+    "starRating": 4,
+
+    "detailReview": [
+      {
+        "userId": 0,
+        "reviewTitle": "제목 : 맛있다응응~",
+        "reviewContents": "시올돈 성북직영점 맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+        "imgURL": "images/detailreviewImg/0/1.PNG",
+        "__comment": "<- 리뷰 이미지"
+      },
+      {
+        "userId": 1,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/2.PNG"
+      },
+      {
+        "userId": 2,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/3.PNG"
+      }
+    ],
+    "shortReview": [
+      {
+        "userId": 0,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 1,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 2,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      }
+    ]
+  },
+  {
+    "__comment": "4번 가게",
+    "name": "100년 설렁탕 본점",
+    "starRating": 4,
+
+    "detailReview": [
+      {
+        "userId": 0,
+        "reviewTitle": "제목 : 맛있다응응~",
+        "reviewContents": "100년 설렁탕 본점 맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+        "imgURL": "images/detailreviewImg/0/1.PNG",
+        "__comment": "<- 리뷰 이미지"
+      },
+      {
+        "userId": 1,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/2.PNG"
+      },
+      {
+        "userId": 2,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/3.PNG"
+      }
+    ],
+    "shortReview": [
+      {
+        "userId": 0,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 1,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 2,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      }
+    ]
+  },
+  {
+    "__comment": "5번 가게",
+    "name": "한성대 양꼬치",
+    "starRating": 4,
+
+    "detailReview": [
+      {
+        "userId": 0,
+        "reviewTitle": "제목 : 맛있다응응~",
+        "reviewContents": "한성대 양꼬치 맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+        "imgURL": "images/detailreviewImg/0/1.PNG",
+        "__comment": "<- 리뷰 이미지"
+      },
+      {
+        "userId": 1,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/2.PNG"
+      },
+      {
+        "userId": 2,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/3.PNG"
+      }
+    ],
+    "shortReview": [
+      {
+        "userId": 0,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 1,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 2,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      }
+    ]
+  },
+  {
+    "__comment": "6번 가게",
+    "name": "방목",
+    "starRating": 4,
+
+    "detailReview": [
+      {
+        "userId": 0,
+        "reviewTitle": "제목 : 맛있다응응~",
+        "reviewContents": "방목 맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+        "imgURL": "images/detailreviewImg/0/1.PNG",
+        "__comment": "<- 리뷰 이미지"
+      },
+      {
+        "userId": 1,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/2.PNG"
+      },
+      {
+        "userId": 2,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/3.PNG"
+      }
+    ],
+    "shortReview": [
+      {
+        "userId": 0,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 1,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 2,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      }
+    ]
+  },
+  {
+    "__comment": "7번 가게",
+    "name": "종로곱창",
+    "starRating": 4,
+
+    "detailReview": [
+      {
+        "userId": 0,
+        "reviewTitle": "제목 : 맛있다응응~",
+        "reviewContents": "종로곱창 맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+        "imgURL": "images/detailreviewImg/0/1.PNG",
+        "__comment": "<- 리뷰 이미지"
+      },
+      {
+        "userId": 1,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/2.PNG"
+      },
+      {
+        "userId": 2,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/3.PNG"
+      }
+    ],
+    "shortReview": [
+      {
+        "userId": 0,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 1,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 2,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      }
+    ]
+  },
+  {
+    "__comment": "8번 가게",
+    "name": "홍추곱창카페",
+    "starRating": 4,
+
+    "detailReview": [
+      {
+        "userId": 0,
+        "reviewTitle": "제목 : 맛있다응응~",
+        "reviewContents": "홍추곱창카페 맛있었구 맛있었습니다 짱짱 여기는 내용입니다 근데 내용이 많으면 잘리게 할거니 이렇게 의미없는 말 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구",
+        "imgURL": "images/detailreviewImg/0/1.PNG",
+        "__comment": "<- 리뷰 이미지"
+      },
+      {
+        "userId": 1,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/2.PNG"
+      },
+      {
+        "userId": 2,
+
+        "reviewTitle": "냠냠쩝쩝",
+        "reviewContents": "맛있당",
+        "imgURL": "images/detailreviewImg/0/3.PNG"
+      }
+    ],
+    "shortReview": [
+      {
+        "userId": 0,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 1,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      },
+      {
+        "userId": 2,
+        "userName": "성이름",
+        "userURL": "userImg/죠르디.PNG",
+        "shortContents": "맛있었구 맛있었습니다 짱짱",
+        "time": "5-30 | 15:47"
+      }
+    ]
+  }
 ]
-  

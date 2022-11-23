@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import styles from "./detailModal.module.css"
 import userData from "../../userData.json"
+import reviewData from "../reviewData.json"
 
 export default function DetailModal({userId, placeId}) {
 
   // userId, userName, userImg, reviewTitle, reviewContents, imgURL순
   let data=[]
+  let name=reviewData[placeId].file.toString()
 
     const [inputs, setInputs] = useState({
         title: '',
@@ -118,7 +120,11 @@ export default function DetailModal({userId, placeId}) {
 
         data.push(inputs.title)
         data.push(inputs.contents)
-        data.push("./"+picture.substring(12))
+        //data.push("./"+picture.substring(12))
+        data.push("./images/detailReviewImg/"+name+"/"+picture.substring(12))
+        console.log("./images/detailReviewImg/"+name+"/"+picture.substring(12))
+        console.log(name)
+        alert("FDSAadsf")
 
         console.log(data)
 

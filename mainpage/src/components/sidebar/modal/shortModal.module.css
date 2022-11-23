@@ -1,0 +1,17 @@
+#box{
+    padding: 20px;
+    padding-left: 40px;
+
+}
+#contents{
+    width: 300px;
+    height: 100px;
+}
+#title{
+    width: 300px;
+}
+#img{
+    float: right;
+    width: 100px;
+    height: 150px
+}

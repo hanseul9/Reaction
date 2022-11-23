@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+
+.shortContents{
+    width: 430px;
+    height: 50px;
+
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: pink;
+    font-family: 'KoPub Batang', sans-serif;
+}
+#userImg{
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 70%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.box1{
+    float:left;
+    width: 12%;
+}
+.box2{
+    margin-top: 13px;
+    float:left;
+    width: 14%;
+}
+.box3{
+    margin-top: 13px;
+    float:left;
+    width: 50%;
+    
+}
+.box4{
+    margin-top: 13px;
+    float:left;
+    width: 23%;
+    
+}
+
+#line{
+    border : dotted 1px gray;
+    
+}

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import styles from "./slider.module.css"
 
 const settings = {
   dots: true,
@@ -20,7 +21,7 @@ export default function SimpleSlider({reviewData}){
           
           {reviewData.detailReview.map((data,i) => (
              <div>
-              <img style={{width:"200px", height:"200px" }} className = "reviewImage" src={data.imgURL}/>
+              <img id = {styles.reviewImage} src={data.imgURL}/>
            </div> 
           )) }
 

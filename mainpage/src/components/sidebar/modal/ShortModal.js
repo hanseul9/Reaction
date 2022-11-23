@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from "./detailModal.module.css"
+import styles from "./shortModal.module.css"
 import userData from "../../userData.json"
 
 
@@ -43,7 +43,7 @@ export default function ShortModal({userId, placeId}) {
             var minutes = ('0' + today.getMinutes()).slice(-2);
             var seconds = ('0' + today.getSeconds()).slice(-2);
             
-            var timeString = month+ '.' +day + '/ ' + hours + ':' + minutes + ':'  + seconds +' ';
+            var timeString = month+ '.' +day + '| ' + hours + ':' + minutes + ':'  + seconds +' ';
             
             console.log(timeString);
   
@@ -171,14 +171,15 @@ export default function ShortModal({userId, placeId}) {
   
                       <br/>
   
-                      내용 
+                      내용 <br/><br/><br/>
   
                       <section>          
                           <textarea name='contents' id={styles.contents} onChange={onChange} value={contents}
-                              placeholder="리뷰를 입력해주세요 (최소 10자 이상)"
+                              placeholder="리뷰를 입력해주세요 (최대 25자)"
                               required
-                              maxLenth="1000"
-                              minLength="10"
+                              minlength="1"
+                              maxlength="25"
+                             
                               />
                       </section>
   
@@ -194,6 +195,7 @@ export default function ShortModal({userId, placeId}) {
   
                       <button onClick={Click} >완료</button>
                   </form>
+                  <img id={styles.img} src="./images/hansung.png"></img>
   
   
               </div>

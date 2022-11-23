@@ -2,7 +2,8 @@ import React from "react";
 
 import DetailContents from "./DetailContents";
 import LocalContents from "../LocalContents";
-import styles from "./scroll.module.css";
+import styles from "../scroll.module.css";
+
 import userData from "../../userData.json"
 
 <div className={styles.container}></div>
@@ -11,7 +12,7 @@ import userData from "../../userData.json"
 export default function DetailBoard({reviewData, userId, placeId}){
     return (
         <>
-            <div id={styles.scroll}>   {/* id="scroll" */}
+            <div className={styles.scroll}>   {/* id="scroll" */}
             {
                //window.localStorage.clear()
             }

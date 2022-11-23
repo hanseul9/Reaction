@@ -148,7 +148,7 @@ export default function DetailModal({userId, placeId}) {
                     <br/>
 
                     <section>
-                        제목 <br/>
+                        제목 <br/><br/>
                         <textarea name='title' id={styles.title} onChange={onChange} value={title}
                             placeholder="제목을 입력해주세요"
                             required
@@ -158,7 +158,7 @@ export default function DetailModal({userId, placeId}) {
 
                     <br/>
 
-                    내용 
+                    내용 <br/>
 
                     <section>          
                         <textarea name='contents' id={styles.contents} onChange={onChange} value={contents}
@@ -172,7 +172,7 @@ export default function DetailModal({userId, placeId}) {
                     <br/>
 
                     <section>
-                        사진 업로드
+                        
                         <input name='picture' onChange={onChange} value={picture}
                         type="file"></input>
                     </section>

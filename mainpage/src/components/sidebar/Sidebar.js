@@ -57,7 +57,7 @@ export default function Sidebar({
       <div
         className={styles.sidebarWrapper}
         style={{
-          transform: `${isClickMarker ? "translateX(0px)" : "translateX(340px)"}`,
+          transform: `${isClickMarker ? "translateX(-150px)" : "translateX(340px)"}`,
           transition: "all 1s",
         }}
       >
@@ -103,13 +103,13 @@ export default function Sidebar({
               <div id={styles.name}>{reviewData[placeId]?.name}</div>
               <br />
               <div id={styles.star}>
-                <StarRating starRating={reviewData[placeId]?.starRating} length={5} />
+                <StarRating starRating={reviewData[placeId]?.starRating}/>
               </div>
             </div>
 
-            <br />
-            <br />
-            <br />
+            
+            
+
 
             <div className={styles.slider}>
               {reviewData[placeId] && <Slider reviewData={reviewData[placeId]} />}
@@ -117,11 +117,10 @@ export default function Sidebar({
 
             <br />
             <br />
-            <br />
-            <br />
+            
 
             <div>
-              <button onClick={() => showModal("detailReivew")}>리뷰 추가</button>
+              <button className={styles.button} onClick={() => showModal("detailReivew")}>리뷰 추가</button>
               {modalOpen && (
                 <ModalBasic
                   setModalOpen={setModalOpen}
@@ -133,7 +132,7 @@ export default function Sidebar({
               {/* modalOpen이 true면 모달 컴포넌트 띄움  */}
             </div>
 
-            <br />
+           
 
             <div className={styles.detailReview}>
               {reviewData[placeId] && (
@@ -141,10 +140,15 @@ export default function Sidebar({
               )}
             </div>
 
-            <br />
+            <br /><br/>
 
-            <div>
-              <button onClick={() => showModal("shortReivew")}>리뷰 추가</button>
+            <div className={styles.short1}>
+                지금 여기는
+                <hr className={styles.line}></hr>
+            </div>
+
+            <div className={styles.short2}>
+              <button className={styles.button} onClick={() => showModal("shortReivew")}>리뷰 추가</button>
               {modalOpen && (
                 <ModalBasic
                   setModalOpen={setModalOpen}
@@ -155,6 +159,8 @@ export default function Sidebar({
               )}
               {/* modalOpen이 true면 모달 컴포넌트 띄움  */}
             </div>
+
+           
 
             <div className={styles.shortReview}>
               {reviewData[placeId] && (

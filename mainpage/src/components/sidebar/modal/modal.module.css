@@ -12,11 +12,11 @@
     /* translate는 본인의 크기 기준으로 작동한다. */
     position: absolute;
     top: 50%;
-    left: -110%;
+    left: -70%;
     transform: translate(-50%, -50%);
   
     /* 모달창 디자인 */
-    background-color: rgb(131, 212, 249);
+    background-color: rgb(191, 227, 244);
     border: 1px rgb(131, 212, 249);
     border-radius: 8px;
   }
@@ -29,6 +29,6 @@
 
     font-size: medium;
 
-    background-color: rgb(131, 212, 249);
+    background-color: rgb(191, 227, 244);
     border: 0px;
   }

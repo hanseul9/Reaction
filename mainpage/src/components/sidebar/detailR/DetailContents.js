@@ -1,28 +1,30 @@
 import React from "react";
-import "./Detail.css";
+import styles from "./detail.module.css";
+// import "./Detail.css";
 
 export default function DetailContents({userName, userImg, reviewTitle, reviewContents, imgURL}){
 
     return (
         <>
-            <div className="detailBoard">
+            <div className={styles.detailBoard}>
 
-                <section className="contents_1"> 
-                     <div> 
-                        <img src={userImg} id="userImg" /> 
-                        &nbsp;
-                        {userName}
-                        &nbsp;
-                        {reviewTitle}
-                    </div>
+                <div className={styles.contents_1}> 
+                
+                <div> 
                         
-                    <div id="contents"> 
+                    <div className={styles.box1}>   <img src={userImg} id={styles.userImg} /> </div>
+                    <div className={styles.box2}>&nbsp;{userName}:</div>
+                    <div className={styles.box3}>&nbsp;{reviewTitle}</div>
+                        
+                </div>
+                    <br/> <br/> <br/>
+                    <div id={styles.contents}> 
                         {reviewContents}
                     </div>
-                </section>
+                </div>
 
-                <section className="contents_2">
-                    <img src={imgURL} id="reviewImg" />
+                <section className={styles.contents_2}>
+                    <img src={imgURL} id={styles.reviewImg} />
                 </section>
             </div>
                

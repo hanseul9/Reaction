@@ -3,6 +3,7 @@
     margin:0px;
     padding: 0px;
     font-family: 'Abril Fatface', cursive;
+    overflow: auto;
 }
 .MAIN_CONTAINER{
     width: 514px;
@@ -96,11 +97,15 @@
     margin: 400px auto auto 260px;
     text-align : center;
     line-height: 40px;
-    background-color: azure;
+    background-color: hsl(135, 50%, 78%);
     width: 260px;
     height: 40px;
     position:absolute;
 }
+.MENU_SELECT:hover{
+    background-color: azure;
+}
+
 .MENU_1{
     margin: 440px auto auto 260px;
     text-align : center;
@@ -109,6 +114,9 @@
     height: 40px;
     position:absolute;
     background-color: hsl(135, 50%, 78%);
+}
+.MENU_1:hover{
+    background-color: azure;
 }
 .MENU_2{
     margin: 480px auto auto 260px;
@@ -119,6 +127,9 @@
     position:absolute;
     background-color: hsl(135, 50%, 78%);
 }
+.MENU_2:hover{
+    background-color: azure;
+}
 .MENU_3{
     margin: 520px auto auto 260px;
     text-align : center;
@@ -127,6 +138,9 @@
     height: 40px;
     position:absolute;
     background-color: hsl(135, 50%, 78%);
+}
+.MENU_3:hover{
+    background-color: azure;
 }
 .PROFILE_IMG{
     margin-top : 40px;
@@ -150,7 +164,7 @@
     margin-top: 50px;
     height: 30px;
     width: 100px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 .PROFILE_EDIT_WORD{
     text-align: center;
@@ -158,6 +172,8 @@
     font-size: 15px;
     color: black;
 }
+
+
 .PROFILE_MAIN{
     margin: 50px auto auto 650px;
     background-color: white;

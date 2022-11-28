@@ -10,7 +10,7 @@
 }
 
 /*   */
-::-webkit-scrollbar{
+.scroll::-webkit-scrollbar{
     width: 7px;
     height: 0px; 
     

@@ -9,9 +9,6 @@ import StarRating from "./components/sidebar/StarRating"
 import Sidebar from "./components/sidebar/Sidebar"
 import MyRoomComponents from './components/MyRoomComponents.js';
 
-let username="profile"
-let email="email"
-let etc="etc"
 
 function App(){
   
@@ -27,7 +24,7 @@ return(
         <Route path="/*" element={<ErrorPage />} />
         <Route path="/map" element={<Map />} />
         <Route path="/sidebar" element={<Sidebar />} />
-        <Route path="/myroom" element={<MyRoomComponents username = {username} email = {email} etc={etc}/>} />
+        <Route path="/myroom" element={<MyRoomComponents etc={etc}/>} />
       </Routes>
   );
 }

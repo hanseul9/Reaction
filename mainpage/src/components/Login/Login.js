@@ -4,11 +4,13 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom'; //페이지 이동
 import styles from './LoginStyle.module.css'; //CSS
 import UserData from "../userData.json"; //데이터 정보
-
+import {useId} from "../../idprovider";
+//import { useDispatch, useSelector } from 'react-redux';
+//import {set} from "../../redux/setId";
 
 //로그인 컴포넌트
 export default function Login() {
-
+  const {id, idSetter} = useId();
     const [email, setEmail] = useState('');
     const [pw, setPw] = useState('');
 
@@ -66,6 +68,8 @@ export default function Login() {
       if(CheckEmail.indexOf(email) != -1) {
         if(CheckPw.indexOf(pw) != -1){
           alert('로그인에 성공했습니다.');
+          idSetter(email);
+          //dispatch(set(email));
           document.location = '/map';//로그인이 성공되면 맵으로 이동
         }
         else{

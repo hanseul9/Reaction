@@ -2,14 +2,13 @@ import React,{Component}from 'react';
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import styles from './MyRoomComponents.module.css';
 import ProfileId from "./context";
-import { useDispatch, useSelector } from 'react-redux';
-import { setId } from "../redux/setId";
-import {useId} from "../idprovider";
-export default function MyRoomComponents() {
- //   const exportId = useSelector(state => state.id);
- //   const dispatch = useDispatch();
+
+class MyRoomMyReviewComponents extends Component {
+    state ={
+        hovering: false
+    }
     
- const {id, idSetter} = useId();
+
         
     /*static defaultProps = {
         usrename: "profile",
@@ -18,7 +17,7 @@ export default function MyRoomComponents() {
     }*/
     
     
-    
+    render() {
         return (
         <body className ={styles.SITE_CONTAINER}>
             <div className ="MAIN">
@@ -33,7 +32,7 @@ export default function MyRoomComponents() {
                 <div className={styles.MAIN_CONTAINER}>
                     <div className={styles.PROFILE}>
                     <img className={styles.PROFILE_IMG} alt="profileImg" src="/images/profile.png" fetchpriority="high"/>
-                    <h1 className={styles.PROFILE_USERNAME}>{id}</h1>
+                    <h1 className={styles.PROFILE_USERNAME}>{this.props.email}</h1>
                     <div className={styles.PROFILE_EDIT}>
                         {/*<h1 className={styles.PROFILE_EDIT_WORD}>edit profile</h1>*/}
                         </div>
@@ -46,7 +45,8 @@ export default function MyRoomComponents() {
         */}
                     <div className={styles.PROFILE_MAIN}>
                         <h1 className={styles.PROFILE_MAIN_PROFILE}>profile</h1>
-                        <h1 className={styles.PROFILE_MAIN_USERNAME}></h1>
+                        <ProfileId.Consumer>{value=>(<h1 className={styles.PROFILE_MAIN_USERNAME}>
+                        email: {value.id}</h1>)}</ProfileId.Consumer>
                         <hr></hr>
                         <h1 className={styles.PROFILE_MAIN_ETC}>etc</h1>
                         <h1 className={styles.PROFILE_MAIN_ETC_WORD}>: {this.props.etc}</h1>
@@ -61,3 +61,6 @@ export default function MyRoomComponents() {
             
                 );
             }           
+}
+
+export default MyRoomMyReviewComponents;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import CloseIcon from "@material-ui/icons/Close";
 import styled from "styled-components";
+import GlobalStyle from "./GlobalStyle";
 
 const MarkerModal = ({ setPositionData, longitude, latitude, close, address }) => {
   // 사용자가 지정한 마커 이름을 담아냅니다.
@@ -30,6 +31,7 @@ const MarkerModal = ({ setPositionData, longitude, latitude, close, address }) =
 
   return (
     <React.Fragment>
+      <GlobalStyle />
       <Component onClick={close} />
       <ModalComponent>
         <ModalExitBtn onClick={close}>
@@ -79,11 +81,13 @@ const ModalComponent = styled.div`
 
 const ModalHeader = styled.div`
   margin-top: 30px;
+  font-family: 'MICEGothic';
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 `;
 
 const ModalInput = styled.div`
+  font-family: 'MICEGothic';
   box-sizing: border-box;
   width: 50%;
 `;
@@ -99,8 +103,9 @@ const ModalSubmitBtn = styled.button`
   outline: none;
   padding: 10px 0;
   cursor: pointer;
+  font-family: 'MICEGothic';
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 4px;
   &:hover {
     opacity: 0.7;

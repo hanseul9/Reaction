@@ -10,7 +10,7 @@ import {useId} from "../../idprovider";
 
 //로그인 컴포넌트
 export default function Login() {
-  const {id, idSetter} = useId();
+  //const {id, idSetter} = useId();
     const [email, setEmail] = useState('');
     const [pw, setPw] = useState('');
 
@@ -68,9 +68,9 @@ export default function Login() {
       if(CheckEmail.indexOf(email) != -1) {
         if(CheckPw.indexOf(pw) != -1){
           alert('로그인에 성공했습니다.');
-          idSetter(email);
+         // idSetter(email);
           //dispatch(set(email));
-          document.location = '/map';//로그인이 성공되면 맵으로 이동
+          document.location = '/myroom/profile';//로그인이 성공되면 맵으로 이동
         }
         else{
           alert('아이디 혹은 비밀번호가 틀렸습니다.');

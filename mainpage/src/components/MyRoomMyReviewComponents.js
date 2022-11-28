@@ -32,7 +32,7 @@ class MyRoomMyReviewComponents extends Component {
                 <div className={styles.MAIN_CONTAINER}>
                     <div className={styles.PROFILE}>
                     <img className={styles.PROFILE_IMG} alt="profileImg" src="/images/profile.png" fetchpriority="high"/>
-                    <h1 className={styles.PROFILE_USERNAME}>{this.props.email}</h1>
+                    <h1 className={styles.PROFILE_USERNAME}>0@naver.com</h1>
                     <div className={styles.PROFILE_EDIT}>
                         {/*<h1 className={styles.PROFILE_EDIT_WORD}>edit profile</h1>*/}
                         </div>
@@ -46,10 +46,10 @@ class MyRoomMyReviewComponents extends Component {
                     <div className={styles.PROFILE_MAIN}>
                         <h1 className={styles.PROFILE_MAIN_PROFILE}>profile</h1>
                         <ProfileId.Consumer>{value=>(<h1 className={styles.PROFILE_MAIN_USERNAME}>
-                        email: {value.id}</h1>)}</ProfileId.Consumer>
+                        email: 0@naver.com</h1>)}</ProfileId.Consumer>
                         <hr></hr>
                         <h1 className={styles.PROFILE_MAIN_ETC}>etc</h1>
-                        <h1 className={styles.PROFILE_MAIN_ETC_WORD}>: {this.props.etc}</h1>
+                        <h1 className={styles.PROFILE_MAIN_ETC_WORD}>: etc</h1>
                     </div>
                 </div>
                 <div className={styles.BOTTOM_CONTAINER}>

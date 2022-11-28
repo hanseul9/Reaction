@@ -12,7 +12,7 @@ import {useId} from "../idprovider";
 export default function MainPageComponents() {
 //        const exportId = useSelector((state) => state.id)
 //        const dispatch = useDispatch();
-const {id, idSetter} = useId();
+//const {id, idSetter} = useId();
         return (
         <div className ={styles.SITE_CONTAINER}>
             <div className ={styles.BODY_CONTAINER}>
@@ -22,7 +22,8 @@ const {id, idSetter} = useId();
                         <NavLink to="/"><img className={styles.TOP_BUTTON_IMG} alt="homebutton" src="images/homebutton.gif" fetchpriority="high"/></NavLink>
                     </div>
                     <h1 className={styles.H1_STYLE_MENU_MAP}><NavLink style={{ textDecoration: 'none', color: 'black' }} to="/map">Map</NavLink></h1>
-                    {{id} == "reaction@hansung.ac.kr" ? <NavLink to='/myroom/profile'><img className={styles.BUTTON_PROFILEIMG} alt="profile" src="images/profile.png" fetchpriority="high"/></NavLink> : <h1 className={styles.H1_STYLE_LOGIN}><NavLink style={{ textDecoration: 'none', color: 'black' }} to="/login">Login</NavLink></h1>}
+                    <h1 className={styles.H1_STYLE_LOGIN}><NavLink style={{ textDecoration: 'none', color: 'black' }} to="/login">Login</NavLink></h1>
+                    {/*{{id} == "reaction@hansung.ac.kr" ? <NavLink to='/myroom/profile'><img className={styles.BUTTON_PROFILEIMG} alt="profile" src="images/profile.png" fetchpriority="high"/></NavLink> : <h1 className={styles.H1_STYLE_LOGIN}><NavLink style={{ textDecoration: 'none', color: 'black' }} to="/login">Login</NavLink></h1>}*/}
                 </div>
                 <div className={styles.MAIN_CONTAINER}>
                     {/*<h1>{`e ${id}`}</h1>*/}

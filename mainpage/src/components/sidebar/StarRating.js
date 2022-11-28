@@ -13,8 +13,6 @@ export default function StarRating(starRating){
         for(let i=0;i<5;i++){
             return <Star selected={num < i}/>
         }
-            
-        console.log("Starrrrrrrrrrrrrrrrrrrrrrr")
     }
 
 
@@ -36,21 +34,7 @@ export default function StarRating(starRating){
                 })
             }
             </div>
-            {/* {
-                star()
-            }
-            {
-                star()
-            }
-            {
-                star()
-            }
-            {
-                star()
-            }
-            {
-                star()
-            } */}
+            {}
         </>
     )
     

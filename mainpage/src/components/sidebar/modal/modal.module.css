@@ -19,6 +19,7 @@
     background-color: rgb(191, 227, 244);
     border: 1px rgb(131, 212, 249);
     border-radius: 8px;
+    box-shadow: 1px 1px 40px 0.5px grey;
   }
   
   /* 모달창 내부 X버튼 */

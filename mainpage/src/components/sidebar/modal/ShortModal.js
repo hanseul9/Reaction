@@ -20,18 +20,12 @@ export default function ShortModal({userId, placeId}) {
         const onChange = (e) => {
           const { value, name} = e.target; // 우선 e.target 에서 name 과 value 를 추출
   
-          console.log("+++++++++++++++++++")
-          console.log(name);
-          console.log(value);
-  
-          console.log(inputs);
   
           setInputs({
             ...inputs, // 기존의 input 객체를 복사한 뒤
             [name]: value // name 키를 가진 값을 value 로 설정
           });
   
-          console.log(inputs);
         };
   
         const getTime =()=> {
@@ -45,8 +39,6 @@ export default function ShortModal({userId, placeId}) {
             
             var timeString = month+ '.' +day + '| ' + hours + ':' + minutes + ':'  + seconds +' ';
             
-            console.log(timeString);
-  
             return timeString
             
         }
@@ -62,64 +54,11 @@ export default function ShortModal({userId, placeId}) {
   
           let time = getTime();
           
-          //console.log(time > "16/ 12:30:11")
-
-          
-  
-          // console.log(localStorage.key(0)[10])
-          // console.log(localStorage.key(0)[11])
-          // console.log(localStorage.key(0)[12])
-  
-          //for문으로----------------------
-
-        //   console.log(localStorage.length)
-        //   console.log(localStorage.key(0))
-
-          //alert("++++")
-            
-          
-          // for(let i=0;i<localStorage.length;i++){   기존데이터 삭제부근
-
-          //   if(localStorage.length === 0 ) //데이터 없으면 나감
-          //       return;
-  
-          //   if(localStorage.key(i)[16]===placeId.toString() 
-          //     && localStorage.key(i)[17]===userId.toString()
-          //     && localStorage.key(i)[18]==="S"){
-          //       console.log("아이템삭제")
-          //       console.log(time)
-          //       localStorage.removeItem(localStorage.key(i))
-          //     }
-                
-          // }
-
-          //alert("++++")
-  
-          //localStorage.map((storage, i)=>{
-            //console.log(storage[i])
-            // if(storage.key(i)[16]===placeId.toString() 
-            //   && storage.key(i)[17]===userId.toString()
-            //   && storage.key(i)[18]==="R")
-            //   console.log("1111")
-          //})
-          //console.log(localStorage.getItem(localStorage.key(2)))
-  
-          //alert("++++")
-  
+        
   
           let key = time + placeId.toString() + userId.toString() + "S"
   
-          //console.log(key)
-  
-  
-          // if(localStorage.getItem(key) === null){ //이미 있으면 제거
-          //   //console.log("================================================")
-          //   localStorage.removeItem(key)
-          // }
-  
-          //alert("++++")
-  
-  
+          
           data.push(userId.toString())
   
           userData.map((d,i)=>{
@@ -133,24 +72,11 @@ export default function ShortModal({userId, placeId}) {
           data.push(inputs.contents)
           data.push("./"+picture.substring(12))
   
-          //console.log(data)
   
           localStorage.setItem(key, data);
   
-  
-  
-  
-          console.log(localStorage);
-          console.log(localStorage.key(0))
-          alert("++++")
-  
+
           
-          //  setInputs({
-          //    title: '',
-          //    contents: '',
-          //    picture: '',
-          //  })
-  
         };
   
       return (
@@ -160,14 +86,6 @@ export default function ShortModal({userId, placeId}) {
   
                       <br/>
   
-                      {/* <section>
-                          제목 <br/>
-                          <textarea name='title' id={styles.title} onChange={onChange} value={title}
-                              placeholder="제목을 입력해주세요"
-                              required
-                              minLength="1"
-                              />
-                      </section> */}
   
                       <br/>
   
@@ -185,12 +103,6 @@ export default function ShortModal({userId, placeId}) {
   
                       <br/>
   
-                      {/* <section>
-                          사진 업로드
-                          <input name='picture' onChange={onChange} value={picture}
-                          type="file"></input>
-                      </section> */}
-  
                       <br/>
   
                       <button onClick={Click} >완료</button>
@@ -203,4 +115,3 @@ export default function ShortModal({userId, placeId}) {
           
       );
   }
-  

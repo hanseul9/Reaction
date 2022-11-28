@@ -107,9 +107,6 @@ export default function Sidebar({
               </div>
             </div>
 
-            
-            
-
 
             <div className={styles.slider}>
               {reviewData[placeId] && <Slider reviewData={reviewData[placeId]} />}

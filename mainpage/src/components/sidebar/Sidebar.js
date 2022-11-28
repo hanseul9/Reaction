@@ -100,7 +100,7 @@ export default function Sidebar({
             <br />
 
             <div>
-              <div id={styles.name}>{reviewData[placeId]?.name}</div>
+              <div id={styles.name}>{storeTitle}</div>
               <br />
               <div id={styles.star}>
                 <StarRating starRating={reviewData[placeId]?.starRating}/>

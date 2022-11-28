@@ -4,6 +4,8 @@ import ShortContents from "./ShortContents";
 //import LocalContents from "../LocalContents";
 import userData from "../../userData.json"
 
+import styles from "../scroll.module.css";
+
 
 
 export default function ShortBoard({reviewData, placeId, reviewType}){
@@ -52,7 +54,7 @@ export default function ShortBoard({reviewData, placeId, reviewType}){
 
     return (
         <>
-            <div> 
+            <div className={styles.scroll_short}> 
 
             {
                //window.localStorage.clear()

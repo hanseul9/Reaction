@@ -1,49 +1,107 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+  font-family: 'MICEGothic Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 .sidebarWrapper {
   position: absolute;
   top: 0%;
-  right: 0%;
+  right: -10%;
   z-index: 99;
   display: flex;
   align-items: center;
   height: 100%;
   margin-top: 10px;
+  
 }
 
 .sidebar {
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: rgba(178, 235, 244, 0.5);
-  width: 340px;
+  width: 470px;
   padding: 3%;
-
+  height: 100vh;
   z-index: 99;
+  box-shadow: 1px 1px 40px 0.5px grey;
 }
 
 .reviewImage {
   width: 120px;
   height: 120px;
   margin-left: 16px;
+  box-shadow: 1px 1px 40px 0.5px grey;
 }
 
 .imgContainer {
   overflow: hidden;
 }
 
-.nameStar {
-  display: inline-block;
-  margin-right: 20px;
+#star{
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.slider {
+#name{
+  border: 3px solid #6aafe6;
+  border-radius: 5px;
+  display: inline;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'MICEGothic Bold';
+  background-color: rgb(237, 253, 253);
+  padding: 7px;
+}
+
+.short1{
+  float:left;
+  width: 20%;
+  font-family: 'MICEGothic Bold';
+  font-weight: bold;
+  padding: 10px;
+}
+.short2{
+  padding-top: 8px;
+  float:left;
+}
+.line{
+  border: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(253, 178, 200);
+
+}
+
+
+
+.button{
+  border: 3px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.552);
+  font-family: 'MICEGothic Bold';
+  padding: 2px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* .slider {
   margin: auto;
   width: 100%;
   height: 150px;
-}
+} */
 
 .detailReview {
   width: 100%;
 }
 
-.slick-slider {
+
+/* .slick-slider {
   width: 280px;
   margin: auto;
-}
+} */

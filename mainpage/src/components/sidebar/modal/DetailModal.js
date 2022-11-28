@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import styles from "./detailModal.module.css"
 import userData from "../../userData.json"
+import reviewData from "../reviewData.json"
 
 export default function DetailModal({userId, placeId}) {
 
   // userId, userName, userImg, reviewTitle, reviewContents, imgURL순
   let data=[]
+  let name=reviewData[placeId].file.toString()
 
     const [inputs, setInputs] = useState({
         title: '',
@@ -118,7 +120,11 @@ export default function DetailModal({userId, placeId}) {
 
         data.push(inputs.title)
         data.push(inputs.contents)
-        data.push("./"+picture.substring(12))
+        //data.push("./"+picture.substring(12))
+        data.push("./images/detailReviewImg/"+name+"/"+picture.substring(12))
+        console.log("./images/detailReviewImg/"+name+"/"+picture.substring(12))
+        console.log(name)
+        alert("FDSAadsf")
 
         console.log(data)
 
@@ -148,7 +154,7 @@ export default function DetailModal({userId, placeId}) {
                     <br/>
 
                     <section>
-                        제목 <br/>
+                        제목 <br/><br/>
                         <textarea name='title' id={styles.title} onChange={onChange} value={title}
                             placeholder="제목을 입력해주세요"
                             required
@@ -158,7 +164,7 @@ export default function DetailModal({userId, placeId}) {
 
                     <br/>
 
-                    내용 
+                    내용 <br/>
 
                     <section>          
                         <textarea name='contents' id={styles.contents} onChange={onChange} value={contents}
@@ -172,7 +178,7 @@ export default function DetailModal({userId, placeId}) {
                     <br/>
 
                     <section>
-                        사진 업로드
+                        
                         <input name='picture' onChange={onChange} value={picture}
                         type="file"></input>
                     </section>
